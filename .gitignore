@@ -9,6 +9,9 @@ wheels/
 # Virtual environments
 .venv
 
+*.pdf
+*.png
+
 experiment_data_final/
 experiment_data_test/
 experiment_data_test_v1/
