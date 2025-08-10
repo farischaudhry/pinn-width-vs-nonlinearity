@@ -1,6 +1,6 @@
 # Scaling Laws for Single-Layer PINNs: Network Width, PDE Nonlinearity, and Approximation Error
 
-This repository contains the official PyTorch implementation and experimental data for the paper, "Scaling Laws for Single-Layer PINNs: Network Width, PDE Nonlinearity, and Approximation Error".
+This repository contains the PyTorch implementation and experimental data for the paper, "Scaling Laws and Pathologies of Single-Layer PINNs: Network Width and PDE Nonlinearity".
 
 ## Abstract
 
@@ -14,3 +14,7 @@ This project provides a highly modular and extensible framework for conducting l
 **Generalized Derivative Computation:** A `Trainer` class with a powerful derivative engine that can compute arbitrary non-mixed and mixed derivatives of the network's outputs with respect to its inputs using `torch.autograd`.
 **Systematic Experiment Management:** An `ExperimentRunner` that takes declarative configuration objects (`ExperimentConfig`) to systematically sweep over parameters like PDE type, network architecture, and problem hardness (`kappa`).
 **Comprehensive Logging:** Each experiment run automatically saves its configuration, a detailed epoch-wise training log (`training_log.csv`), and a final summary of metrics (`summary.json`).
+
+## Experimental Results
+
+Git Large File Storage (LFS) is used for the experimental results. These can be found in the 'experiment_data_test_v1.zip' file.
