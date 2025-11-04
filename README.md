@@ -8,12 +8,15 @@ While Physics-Informed Neural Networks (PINNs) are widely used, a quantitative u
 
 ## Framework Overview
 
-This project provides a highly modular and extensible framework for conducting large-scale empirical studies on Physics-Informed Neural Networks. The core components are:
+This project provides a highly modular and extensible framework for conducting empirical studies on Physics-Informed Neural Networks. The core components are:
 
 **`PDEProblem` (Abstract Base Class):** A flexible interface for defining new PDE problems, including their governing equations, domain, boundary/initial conditions, ground truth solutions, and derivative requirements.
+
 **Generalized Derivative Computation:** A `Trainer` class with a powerful derivative engine that can compute arbitrary non-mixed and mixed derivatives of the network's outputs with respect to its inputs using `torch.autograd`.
-**Systematic Experiment Management:** An `ExperimentRunner` that takes declarative configuration objects (`ExperimentConfig`) to systematically sweep over parameters like PDE type, network architecture, and problem hardness (`kappa`).
-**Comprehensive Logging:** Each experiment run automatically saves its configuration, a detailed epoch-wise training log (`training_log.csv`), and a final summary of metrics (`summary.json`).
+
+**Experiment Management:** An `ExperimentRunner` that takes declarative configuration objects (`ExperimentConfig`) to systematically sweep over parameters like PDE type, network architecture, and problem hardness (`kappa`).
+
+**Logging:** Each experiment run automatically saves its configuration, a detailed epoch-wise training log (`training_log.csv`), and a final summary of metrics (`summary.json`).
 
 ## Experimental Results
 
